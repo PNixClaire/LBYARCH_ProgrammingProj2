@@ -1,6 +1,6 @@
 section .data 
 
-;test data here
+;test data here but this should get input from C...I think
 a dd 0.0, 0.0, 0.0, 0.0
 b dd 0.0, 0.0, 0.0, 0.0
 n dd 4 ;length
