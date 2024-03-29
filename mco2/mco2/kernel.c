@@ -10,7 +10,7 @@ double dotProdC(double* a, double* b, int n) {
 	return sdot;
 }
 
-extern double dotProdC(double* a, double* b, int n);
+extern double dotProdAsm(double* a, double* b, int n);
 
 //C program to call both kernels 
 int main() {
@@ -20,9 +20,9 @@ int main() {
 	double a[] = {};
 	double b[] = {};
 
-	double kernelC = dotProdC(A, B, n);
+	double kernelC = dotProdC(a, b, n);
 
-	double kernelAsm = dotProdAsm(A, B, n);
+	double kernelAsm = dotProdAsm(a, b, n);
 
 
 	return 0;
