@@ -1,9 +1,9 @@
 %include "io64.inc"
 section .data 
 ;test data here but this should get input from C...I think
-a dq 2.0, 2.0, 2.0, 2.0
-b dq 2.0, 4.0, 6.0, 8.0
-n dd 4 ;length
+a dq 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0
+b dq 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0
+n dd 8 ;length
 sdot dq 0.0 ;total
 section .text
 global main
@@ -14,6 +14,7 @@ main:
     mov rsi, a
     mov rdi, b
     mov rcx, [n]
+    shr rcx, 1
     
     xorpd xmm0, xmm0
     
