@@ -8,14 +8,16 @@ section .data
 sdot dq 0.0 ;total
 
 section .text
+bits 64
+default rel
 global dotProdAsm
+extern printf
+
 ;global main
 ;main:
 
 dotProdAsm:
-    mov rbp, rsp; for correct debugging
-    ;write your code here
-    
+
     mov rsi, rcx ;*a
     mov rdi, rdx ;*b
     mov rcx, r8 ;n
@@ -36,7 +38,4 @@ dotProdAsm:
         loop NEXT
         
         movapd [sdot], xmm0
-
-                
-    xor rax, rax    
-    ret
+        ret
