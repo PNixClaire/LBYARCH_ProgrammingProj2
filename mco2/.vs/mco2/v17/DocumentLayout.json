@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EB2F28E4-795A-4E7D-A06F-83F7095ED306}|mco2\\mco2.vcxproj|C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\mco2\\kernel.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EB2F28E4-795A-4E7D-A06F-83F7095ED306}|mco2\\mco2.vcxproj|solutionrelative:mco2\\kernel.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EB2F28E4-795A-4E7D-A06F-83F7095ED306}|mco2\\mco2.vcxproj|C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\mco2\\kernel.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{EB2F28E4-795A-4E7D-A06F-83F7095ED306}|mco2\\mco2.vcxproj|solutionrelative:mco2\\kernel.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB2F28E4-795A-4E7D-A06F-83F7095ED306}|mco2\\mco2.vcxproj|C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\mco2\\kernel.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EB2F28E4-795A-4E7D-A06F-83F7095ED306}|mco2\\mco2.vcxproj|solutionrelative:mco2\\kernel.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,17 +21,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "kernel.asm",
               "DocumentMoniker": "C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\mco2\\kernel.asm",
               "RelativeDocumentMoniker": "mco2\\kernel.asm",
               "ToolTip": "C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\mco2\\kernel.asm",
               "RelativeToolTip": "mco2\\kernel.asm",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-03-30T08:14:21.809Z",
               "IsPinned": true,
@@ -43,26 +43,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "gs_report.c",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
-              "ViewState": "AQIAAMAAAAAAAAAAAAApwOAAAABPAAAA",
+              "ViewState": "AQIAAOgAAAAAAAAAAAAawNsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-03-30T10:01:35.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "kernel.c",
               "DocumentMoniker": "C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\mco2\\kernel.c",
               "RelativeDocumentMoniker": "mco2\\kernel.c",
               "ToolTip": "C:\\Users\\clair\\Desktop\\p\\LBYARCH_ProgrammingProj2\\mco2\\mco2\\kernel.c",
               "RelativeToolTip": "mco2\\kernel.c",
-              "ViewState": "AQIAACoAAAAAAAAAAAAUwCUAAAAeAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAYwDMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-03-30T08:14:12.061Z",
               "EditorCaption": ""
