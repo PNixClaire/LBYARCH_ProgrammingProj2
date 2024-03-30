@@ -18,6 +18,7 @@ extern printf
 
 dotProdAsm:
 
+    sub rsp, 8*5
     mov rsi, rcx ;*a
     mov rdi, rdx ;*b
     mov rcx, r8 ;n
@@ -38,4 +39,5 @@ dotProdAsm:
         loop NEXT
         
         movapd [sdot], xmm0
+        add rsp, 8*5
         ret
