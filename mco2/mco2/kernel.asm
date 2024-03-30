@@ -1,31 +1,42 @@
+;%include "io64.inc"
 section .data 
-
 ;test data here but this should get input from C...I think
-a dd 0.0, 0.0, 0.0, 0.0
-b dd 0.0, 0.0, 0.0, 0.0
-n dd 4 ;length
-sdot dd 0.0 ;total
+;a dq 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0
+;b dq 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0
+;n dd 8 ;length
+
+sdot dq 0.0 ;total
 
 section .text
-bits 64 
-default rel
+global dotProdAsm
+;global main
+;main:
 
-global dotProd
+dotProdAsm:
+    mov rbp, rsp; for correct debugging
+    ;write your code here
+    
+    mov rsi, rcx ;*a
+    mov rdi, rdx ;*b
+    mov rcx, r8 ;n
+    shr rcx, 1
+    
+    xorpd xmm0, xmm0
+    NEXT: 
+        movapd xmm0, [rsi]
+        movapd xmm2, [rdi]
+        
+        mulpd xmm1, xmm2
+        haddpd  xmm1, xmm1
+        addpd xmm0, xmm1
+        
+        add rdi, 16
+        add rsi, 16
+        
+        loop NEXT
+        
+        movapd [sdot], xmm0
 
-dotProd:
-	START: 
-		cmp rax, [n]
-		jge END
-
-		movupd xmm1, [a + rax*8]
-		movupd xmm2, [b + rax*8]
-
-		mulpd xmm1, xmm2
-		addpd xmm0, xmm1
-
-		add rax, 1
-		jmp START
-	END:
-		haddpd xmm0, xmm0
-		movupd [sdot], xmm0
-ret
+                
+    xor rax, rax    
+    ret

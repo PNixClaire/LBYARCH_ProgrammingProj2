@@ -17,14 +17,15 @@ double dotProdC(double* a, double* b, int n) {
 	return sdot;
 }
 
-//extern void asmhello();  EXTERN CALL HERE
+extern double dotProdAsm(double *a, double* b,int n);  //EXTERN CALL HERE
 
 int main() {
 	int n = 8; //vector length
 	//double a[n] = {};
-	double *a = malloc(n * sizeof(double));
+	double *a = (double*) malloc(n * sizeof(double));
 	//double b[n] = {};
-	double *b = malloc(n * sizeof(double));
+	double *b = (double*)malloc(n * sizeof(double));
+	int kernel; 
 
 	for (int i = 0; i < n; i++) {
 		a[i] = 2.0;
@@ -43,10 +44,21 @@ int main() {
 	}
 	printf("\n");
 
-	double kernelC = dotProdC(a, b, n);
-	printf("\n%lf", kernelC);
 
-	//double kernelAsm = dotProdAsm(a, b, n); INSERT ASSEMBLY CALL HERE
+	printf("[1] Kernel.c [2] Kernel.asm \n Choose a Kernel to run: ");
+	scanf_s("%d", &kernel);
+
+	if (kernel == 1) {
+		double kernelC = dotProdC(a, b, n);
+		printf("\n%lf", kernelC);
+	}
+	else if (kernel == 2) {
+		double kernelAsm = dotProdAsm(a, b, n); //INSERT ASSEMBLY CALL HERE
+		printf("\n%lf", kernelAsm);
+	}
+
+	free(a);
+	free(b);
 	
 	return 0;
 }
